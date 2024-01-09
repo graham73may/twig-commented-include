@@ -1,5 +1,5 @@
 {
-	"name": "djboris88/twig-commented-include",
+	"name": "graham73may/twig-commented-include",
 	"description": "Twig extension which outputs HTML comments before and after the `include` tag",
 	"keywords": ["twig", "html", "comments", "debug"],
 	"homepage": "https://github.com/djboris88/twig-include-comments",
