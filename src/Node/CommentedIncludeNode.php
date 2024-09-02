@@ -28,7 +28,7 @@ class CommentedIncludeNode extends IncludeNode implements NodeOutputInterface
 		$compiler->addDebugInfo($this);
 
 		$compiler
-			->raw("echo '<!-- Begin output of " )
+			->raw("yield '<!-- Begin output of " )
 			->subcompile($this->getNode('expr'))
 			->raw(" -->';\n\n")
 		;
@@ -60,7 +60,7 @@ class CommentedIncludeNode extends IncludeNode implements NodeOutputInterface
 		}
 
 		$compiler
-			->raw("echo '<!-- / End output of " )
+			->raw("yield '<!-- / End output of " )
 			->subcompile($this->getNode('expr'))
 			->raw(" -->';\n\n")
 		;
